@@ -6,4 +6,6 @@ attr_accessor :name, :birthday, :hair_color, :eye_color, :height,
 
   def initialize(hash)
     hash.each {|key, value| self.send(("#{key}="), value)}
+  end
+  
 end
